@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rachel Zuehlke Art</title>
+  <link rel="stylesheet" href="projectsV2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.css">
+
+  <script src="main.js" defer></script>
+</head>
+
+<div>
+  <header class="header">
+    <a href="#">Rachel Zuehlke</a>
+    <div class="menu-btn">
+      <div class="menu-btn_lines"></div>
+    </div>
+    <ul class="menu-items">
+      <li><a href="index.html" class="menu-item">Home</a></li>
+      <li><a href="gallery.html" class="menu-item">Gallery</a></li>
+      <li><a href="projects.html" class="menu-item">Projects</a></li>
+      <li><a href="contact.html" class="menu-item">Contact</a></li>
+    </ul>
+
+  </header>
+  <div class="section_description">
+    <h1>projects</h1>
+    <h2>Discover the diverse digital art portfolio of Rachel Zuehlke, featuring commissioned work in multiple mediums. From school mascots to board game illustrations, Rachel's captivating designs inspire. With a talent for graphic art, her beer can designs stand out on the shelves. Her unparalleled ability to bring a client's vision to life is recognized for its attention to detail, bold lines, and striking colors. </h2>
+  </div>
+
+  <div class="gallery-container-1">
+
+    <div class="gallery-item" data-index="1">
+      <img src="img/burgle-smurch-faces 2.png" alt="">
+    </div>
+    <div>
+    <h4>Rachel’s monster concept art begins with a basic form, which she then adds poses and different angles to bring her creations to life. Starting with a simple silhouette or shape, she begins to explore the character's anatomy, adding depth and dimension through different perspectives and angles.</h4>
+  </div>
+    <div class="gallery-item" data-index="2">
+      <img src="img/Lee doodles.png" alt="">
+    </div>
+    <h4>This piece showcases a dynamic female character in a range of poses and expressions, all in a monotone color scheme. This is just the starting point for Rachel's art, however; she uses this as a foundation to add additional layers, bringing the character and her world to life in a way that is both captivating and imaginative. </h4>
+  </div>
+  <div class="section_description">
+    <h1>Example of Rachel's project from start to finish...</h1>
+    <h2>Her projects begins with brainstorming and conceptualization, using various methods to develop ideas and inspiration. The production phase involves creating the artwork using digital tools and software, experimenting with different techniques and styles. The post-production phase refines and polishes the artwork, adjusting colors, lighting, composition, and other elements to create the final piece.</h2>
+  </div>
+  <div class="gallery-container-2">
+    <div class="gallery-item" data-index="3">
+      <img src="img/Cobalt-page-1.jpg" alt="">
+      
+    </div>
+    <h4>In this stage, she sketches out the general body, clothing, and facial features of the character using traditional or digital tools, experimenting with different shapes, textures, and colors until she arrives at a concept she is happy with.</h4>
+
+
+    <div class="gallery-item" data-index="4">
+      <img src="img/Cobalt-page-2.jpg" alt="">
+      
+    </div>
+    <h4> In the second stage, she produces artwork using digital tools and software, adding more details and experimenting with different techniques and styles. From these variations, she selects the one that she likes the most to move on to the final stage.</h4>
+
+
+    <div class="gallery-item" data-index="5">
+      <img src="img/Cobalt-full-body.jpg" alt="">
+      
+    </div>
+    <h4>In the final stage, she refines and polishes the artwork by adjusting colors, lighting, composition, and other elements to create the final piece. Overall, the artist demonstrates her creative process and technical proficiency in bringing her ideas to fruition.</h4>
+
+  </div>
+
+  <div class="section_description">
+    <h1>some of Rachel's other commisioned projects...</h1>
+    <h2>The commissioned art projects included creating a logo for a college gaming club, designing a board game, and creating a beer bottle label.</h2>
+    
+  </div>
+
+
+  <div class="gallery-container-2">
+    <div class="gallery-item" data-index="6">
+      <img src="img/UNAGC-banner-black-border.png" alt="">
+      
+    </div>
+    <h4>For the college gaming club logo, the artist worked closely with the club members to understand their vision and preferences and created two variations of the logo. After feedback and revisions, the final design was chosen and refined to create a clean and professional logo that reflected the club's identity.</h4>
+
+
+    <div class="gallery-item" data-index="7">
+      <img src="img/UNAGC-banner-white-border.png" alt="">
+    </div>
+    <h4>Here is the second variation of the logo.</h4>
+
+
+    <div class="gallery-item" data-index="8">
+      <img src="img/board-game-box-art-concept.png" alt="">
+    </div>
+    <h4>For the board game, the artist worked on the illustrations and designs, using creativity and attention to detail to ensure a fun and engaging experience for players. </h4>
+
+
+    <div class="gallery-item" data-index="9">
+      <img src="img/Beer-Label.png" alt="">
+      
+    </div>
+    <h4>The beer bottle label design was also a collaborative process, with the artist working closely with the client to create a label that was both visually striking and aligned with their branding goals. </h4>
+  </div>
+  <div class="section_description">
+    <h1>Interested in a commissioned art piece? Feel free to reach out to me for more information.</h1>
+  
+  </div>
+
+
+  </div>
+  <!--javascript-->
+  <script>
+    const galleryItem = document.getElementsByClassName("gallery-item");
+    //create element for lightbox
+    const lightBoxContainer = document.createElement("div");
+    //for basic area
+    const lightBoxContent = document.createElement("div");
+    //for images
+    const lightBoxImg = document.createElement("img");
+    //for prev button to change image
+    const lightBoxPrev = document.createElement("div");
+    //for next button to change image
+    const lightBoxNext = document.createElement("div");
+
+
+    //create classlist
+
+    lightBoxContainer.classList.add('lightbox');
+    lightBoxContent.classList.add('lightbox-content');
+    lightBoxPrev.classList.add("fa", "fa-angle-left", "lightbox-prev");
+    lightBoxNext.classList.add("fa", "fa-angle-right", "lightbox-next");
+
+    lightBoxContainer.appendChild(lightBoxContent);
+    lightBoxContent.appendChild(lightBoxImg);
+    lightBoxContent.appendChild(lightBoxPrev);
+    lightBoxContent.appendChild(lightBoxNext);
+    document.body.appendChild(lightBoxContainer);
+
+
+
+    let index = 1;
+
+    //create function
+
+    function showLightBox(n) {
+      if (n > galleryItem.length) {
+        index = 1;
+      } else if (n < 1) {
+        index = galleryItem.length;
+      }
+      let imageLocation = galleryItem[index - 1].children[0].getAttribute("src");
+      lightBoxImg.setAttribute("src", imageLocation);
+    }
+
+
+    function currentImage() {
+      lightBoxContainer.style.display = "block";
+
+      let imageIndex = parseInt(this.getAttribute("data-index"));
+      showLightBox(index = imageIndex);
+
+    }
+
+
+    for (let i = 0; i < galleryItem.length; i++) {
+      galleryItem[i].addEventListener("click", currentImage);
+    }
+
+    function sliderImage(n) {
+      showLightBox(index += n);
+    }
+
+    function prevImage() {
+      sliderImage(-1);
+    }
+
+    function nextImage() {
+      sliderImage(1);
+    }
+
+    lightBoxPrev.addEventListener("click", prevImage);
+    lightBoxNext.addEventListener("click", nextImage);
+
+    //close lightbox
+
+    function closeLightBox() {
+      if (this === event.target) {
+        lightBoxContainer.style.display = "none";
+      }
+    }
+
+    lightBoxContainer.addEventListener("click", closeLightBox);
+
+
+
+  </script>
+</body>
+
+</html>
